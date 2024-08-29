@@ -61,14 +61,14 @@ export function Landing() {
         <main className="flex-1 p-4">
           <h2 className="mb-4 text-2xl font-bold">Alumnii Danish</h2>
           <Card className="mb-6">
-            <CardContent>
+            <CardContent className="p-4">
               <div className="flex items-center gap-4">
                 <Avatar>
                   <AvatarImage src="/placeholder-user.jpg" alt="User" />
                   <AvatarFallback>U</AvatarFallback>
                 </Avatar>
                 <Input placeholder="Share your thoughts" className="flex-1" />
-                <Button className="bg-black text-white">Send</Button>
+                <Button className="bg-black text-white border border-black text-[20px] hover:bg-grey">Send</Button>
               </div>
               <div className="flex gap-4 mt-2">
                 <Button variant="outline" className="flex items-center gap-2">
