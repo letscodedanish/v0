@@ -2,7 +2,6 @@
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { cn } from '@/lib/utils';
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import {
@@ -18,8 +17,11 @@ import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
     email: z.string().min(2, {
-        message: "username must be at least 2 Characters long."
+        message: "email must be at least 2 Characters long."
     }).max(50),
+    password: z.string().min(8, {
+        message: "password must be at least 8 characters long."
+    }).max(50)
 });
 
 export function Login() {
@@ -48,7 +50,7 @@ export function Login() {
                     <div className="flex flex-col gap-3">
                         <FormField
                         control={form.control}
-                        name="username"
+                        name="email"
                         render={({ field }) => (
                             <FormItem>
                             <FormLabel>Email</FormLabel>
