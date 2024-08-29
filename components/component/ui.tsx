@@ -248,7 +248,7 @@ export function ui() {
   )
 }
 
-function AppleIcon(props) {
+function AppleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -269,7 +269,7 @@ function AppleIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -291,7 +291,7 @@ function MenuIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -311,7 +311,7 @@ function MountainIcon(props) {
 }
 
 
-function SmartphoneIcon(props) {
+function SmartphoneIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
